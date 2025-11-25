@@ -16,5 +16,12 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vitest.disableWorkspaceWarning": true
+  "vitest.disableWorkspaceWarning": true,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ffffff",
+    "terminalCursor.foreground": "#ffffff",
+    "activityBar.background": "#063518",
+    "titleBar.activeBackground": "#094B22",
+    "titleBar.activeForeground": "#EEFDF4"
+  }
 }

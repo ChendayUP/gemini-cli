@@ -38,7 +38,10 @@ async function main() {
     format: 'cjs',
     minify: production,
     sourcemap: !production,
-    sourcesContent: false,
+    // Include the original source content in the source map so that VS Code
+    // can reliably map breakpoints set in .ts files when debugging the bundled
+    // extension (helps when the bundle is a single file and sources aren't embedded).
+    sourcesContent: true,
     platform: 'node',
     outfile: 'dist/extension.cjs',
     external: ['vscode'],
